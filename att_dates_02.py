@@ -7,7 +7,7 @@ import tkinter as tk
 
 
 # Open the excel spread sheet nd
-wb = openpyxl.load_workbook('Matt_Attendance.xlsx')
+wb = openpyxl.load_workbook('Test_Attendance.xlsx')
 sheet = wb.get_sheet_by_name('Sheet1')
 
 cells = ['C6', 'E6', 'G6', 'I6', 'K6', 
@@ -60,7 +60,7 @@ for i, cell in enumerate(remain_cells):
 # Assign value to cell using '.value' 
     sheet[cell].value = remain_dates[i]  
 
-wb.save('Matt_Attendance.xlsx')
+wb.save('Test_Attendance.xlsx')
 
 
 
